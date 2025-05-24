@@ -1,43 +1,43 @@
 let data_base = [
-    { id: 1, product_name: "Mobile", product_details: "vivo T4x 5G (Pronto Purple, 128 GB)", product_image: "./image/vivo t4x5g.webp", product_price: 14999 },
-    { id: 2, product_name: "Mobile", product_details: "Nothing Phone (3a) (Blue, 128 GB)", product_image: "./image/ph4.jfif", product_price: 24000 },
-    { id: 3, product_name: "Mobile", product_details: "Infinix Note 50s 5G+ (Titanium Grey, 128 GB)", product_image: "./image/infix 5g.webp", product_price: 15999 },
-    { id: 4, product_name: "Mobile", product_details: "realme C61 (Safari Green, 128 GB)", product_image: "./image/realme c61.webp", product_price: 8199 },
-    { id: 5, product_name: "Mobile", product_details: "MOTOROLA g05 (Plum Red, 64 GB)", product_image: "./image/motorla g5g.webp", product_price: 7299 },
-    { id: 6, product_name: "Mobile", product_details: "REDMI 13 5G (Hawaiian Blue, 128 GB)", product_image: "./image/ph4.jfif", product_price: 12499 },
-    { id: 7, product_name: "Mobile", brand: "Apple", price: 999, product_image: "./image/ph4.jfif", description: "The latest iPhone with A16 Bionic chip." },
-    { id: 8, product_name: "Mobile", brand: "Samsung", price: 1199, product_image: "./image/ph4.jfif", description: "Samsung's flagship with amazing camera and performance." },
-    { id: 9, product_name: "Moblie", brand: "OnePlus", price: 799, product_image: "./image/ph4.jfif", description: "Fast, smooth, and powerful with OxygenOS." },
-    { id: 10, product_name: "furniture", product_details: "ZENVEXYO 88130 Micro Fiber metalic Carbon Steel Collapsible Wardrobe", product_image: "../e-commerce/image/categries_image/Zenvexiyo.webp", product_price: 708 },
-    { id: 11, product_name: "furniture", product_details: "Perfect Homes Birmingham Engineered Wood King Bed", product_image: "./image/bed.webp", product_price: 5000 },
-    { id: 12, product_name: "furniture", product_details: "Homesick Bliss Dual Comfort - Soft & Hard 4 inch Single High Density (HD) Foam Mattress  (L x W: 72 inch x 36 inch)", product_image: "../e-commerce/image/categries_image/bed3.webp", product_price: 2500 },
-    { id: 13, product_name: "furniture", product_details: "FLYUP 5 Layer Collapsible Wardrobe for Clothes & Luggage Organiser", product_image: "./image/Zenvexiyo.webp", product_price: 708 },
-    { id: 14, product_name: "furniture", product_details: "FLYUP 5 Layer Collapsible Wardrobe for Clothes & Luggage Organiser", product_image: "./image//Zenvexiyo.webp", product_price: 708 },
-    { id: 15, product_name: "furniture", product_details: "FLYUP 5 Layer Collapsible Wardrobe for Clothes & Luggage Organiser", product_image: "./image/Zenvexiyo.webp", product_price: 708 },
-    { id: 16, product_name: "electrocis", product_details: "realme 108 cm (43 inch) Ultra HD (4K) LED Smart Android TV with Handsfree Voice Search and Dolby Visio...", product_image: "./Realmetv.webp", product_price: 24000 },
-    { id: 17, product_name: "electrocis", product_details: "Thomson Phoenix 2025 Edition 139 cm (55 inch) QLED Ultra HD (4K) Smart Google TV 2025 Edition", product_image: "./image/led tv.webp", product_price: 2000 },
-    { id: 18, product_name: "electrocis", product_details: "SAMSUNG 8 kg 5 star, Ecobubble, Digital Inverter, Fully Automatic Top Load Washing Machine Grey  (WA80BG4441BGTL)", product_image: "../e-commerce/image/categries_image/fulltu auto.webp", product_price: 19000 },
-    { id: 19, product_name: "electrocis", product_details: "LG 185 L Direct Cool Single Door 4 Star Refrigerator with Base Drawer with Smart Inverter Compressor & Smart Connect  (Scarlet Euphoria, GL-D199OSEY)", product_image: "../e-commerce/image/categries_image/led tv.webp", product_price: 25000 },
-    { id: 20, product_name: "home", product_details: "Voltas 2024 Model 1.5 Ton 3 Star Split Inverter AC - White  (183V CAX(4503692), Copper Condenser)", product_image: "./image/ac.webp", product_price: 24000 },
-    { id: 21, product_name: "home", product_details: "MarQ by Flipkart 2025 1 Ton 5 Star Split Inverter 5-in-1 Convertible with Turbo Cool Technology AC - White  (105IPG25WQ, Copper Condenser)", product_image: "./image/walq ac.webp", product_price: 25000 },
-    { id: 22, product_name: "home", product_details: "LG 185 L Direct Cool Single Door 2 Star Refrigerator  (Dim Grey, GL-B199ODGC)", product_image: "../e-commerce/image/categries_image/lg fridge.webp", product_price: 15000},
-    { id: 23, product_name: "home", product_details: "Whirlpool 235 L Frost Free Double Door 2 Star Refrigerator  (Radiant Steel, NEO DF278 PRM RADIANT STEEL(2S)-TL))", product_image: "./image/2starfridge.webp", product_price: 25000 },
-    { id: 24, product_name: "fashion", product_details: "Men Regular Fit Solid Curved Collar Casual Shirt", product_image: "./image/men shirt.webp", product_price: 350 },
-    { id: 24, product_name: "fashion", product_details: "Men Slim Fit Solid Spread Collar Casual Shirt  (Pack of 2)", product_image: "./image/men slim.webp", product_price: 460 },
-    { id: 25, product_name: "fashion", product_details: "Men Loose Fit Mid Rise Light Blue Jeans", product_image:"./image/jeans.webp", product_price: 350 },
-    { id: 26, product_name: "fashion", product_details: "Men Solid Black Track Pants", product_image:"./image/track.webp", product_price: 390},
-    { id: 27, product_name: "fashion", product_details: "Self Design Kanjivaram Silk Blend Saree  (Blue)", product_image: "./image/saree.webp", product_price: 25000 },
-  ]; 
-function search(){
-data_base.filter(x =>{
-   const inputValue = document.getElementById('searchvalue').value;
- if(inputValue.toLowerCase() === x.product_name.toLowerCase()){
-  products(inputValue);
- }
-})
+  { id: 1, product_name: "Mobile", product_details: "vivo T4x 5G (Pronto Purple, 128 GB)", product_image: "./image/vivo t4x5g.webp", product_price: 14999 },
+  { id: 2, product_name: "Mobile", product_details: "Nothing Phone (3a) (Blue, 128 GB)", product_image: "./image/ph4.jfif", product_price: 24000 },
+  { id: 3, product_name: "Mobile", product_details: "Infinix Note 50s 5G+ (Titanium Grey, 128 GB)", product_image: "./image/infix 5g.webp", product_price: 15999 },
+  { id: 4, product_name: "Mobile", product_details: "realme C61 (Safari Green, 128 GB)", product_image: "./image/realme c61.webp", product_price: 8199 },
+  { id: 5, product_name: "Mobile", product_details: "MOTOROLA g05 (Plum Red, 64 GB)", product_image: "./image/motorla g5g.webp", product_price: 7299 },
+  { id: 6, product_name: "Mobile", product_details: "REDMI 13 5G (Hawaiian Blue, 128 GB)", product_image: "./image/ph4.jfif", product_price: 12499 },
+  { id: 7, product_name: "Mobile", product_details: "Apple", price: 999, product_image: "./image/ph4.jfif", description: "The latest iPhone with A16 Bionic chip." },
+  { id: 8, product_name: "Mobile", product_details: "Samsung", price: 1199, product_image: "./image/ph4.jfif", description: "Samsung's flagship with amazing camera and performance." },
+  { id: 9, product_name: "Moblie", product_details: "OnePlus", price: 799, product_image: "./image/ph4.jfif", description: "Fast, smooth, and powerful with OxygenOS." },
+  { id: 10, product_name: "furniture", product_details: "ZENVEXYO 88130 Micro Fiber metalic Carbon Steel Collapsible Wardrobe", product_image: "./image/Zenvexiyo.webp", product_price: 708 },
+  { id: 11, product_name: "furniture", product_details: "Perfect Homes Birmingham Engineered Wood King Bed", product_image: "./image/bed.webp", product_price: 5000 },
+  { id: 12, product_name: "furniture", product_details: "Homesick Bliss Dual Comfort - Soft & Hard 4 inch Single High Density (HD) Foam Mattress  (L x W: 72 inch x 36 inch)", product_image: "./image/bed3.webp", product_price: 2500 },
+  { id: 13, product_name: "furniture", product_details: "FLYUP 5 Layer Collapsible Wardrobe for Clothes & Luggage Organiser", product_image: "./image/Zenvexiyo.webp", product_price: 708 },
+  { id: 14, product_name: "furniture", product_details: "FLYUP 5 Layer Collapsible Wardrobe for Clothes & Luggage Organiser", product_image: "./image//Zenvexiyo.webp", product_price: 708 },
+  { id: 15, product_name: "furniture", product_details: "FLYUP 5 Layer Collapsible Wardrobe for Clothes & Luggage Organiser", product_image: "./image/Zenvexiyo.webp", product_price: 708 },
+  { id: 16, product_name: "electrocis", product_details: "realme 108 cm (43 inch) Ultra HD (4K) LED Smart Android TV with Handsfree Voice Search and Dolby Visio...", product_image: "./Realmetv.webp", product_price: 24000 },
+  { id: 17, product_name: "electrocis", product_details: "Thomson Phoenix 2025 Edition 139 cm (55 inch) QLED Ultra HD (4K) Smart Google TV 2025 Edition", product_image: "./image/led tv.webp", product_price: 2000 },
+  { id: 18, product_name: "electrocis", product_details: "SAMSUNG 8 kg 5 star, Ecobubble, Digital Inverter, Fully Automatic Top Load Washing Machine Grey  (WA80BG4441BGTL)", product_image: "../e-commerce/image/categries_image/fulltu auto.webp", product_price: 19000 },
+  { id: 19, product_name: "electrocis", product_details: "LG 185 L Direct Cool Single Door 4 Star Refrigerator with Base Drawer with Smart Inverter Compressor & Smart Connect  (Scarlet Euphoria, GL-D199OSEY)", product_image: "../e-commerce/image/categries_image/led tv.webp", product_price: 25000 },
+  { id: 20, product_name: "home", product_details: "Voltas 2024 Model 1.5 Ton 3 Star Split Inverter AC - White  (183V CAX(4503692), Copper Condenser)", product_image: "./image/ac.webp", product_price: 24000 },
+  { id: 21, product_name: "home", product_details: "MarQ by Flipkart 2025 1 Ton 5 Star Split Inverter 5-in-1 Convertible with Turbo Cool Technology AC - White  (105IPG25WQ, Copper Condenser)", product_image: "./image/walq ac.webp", product_price: 25000 },
+  { id: 22, product_name: "home", product_details: "LG 185 L Direct Cool Single Door 2 Star Refrigerator  (Dim Grey, GL-B199ODGC)", product_image: "../e-commerce/image/categries_image/lg fridge.webp", product_price: 15000 },
+  { id: 23, product_name: "home", product_details: "Whirlpool 235 L Frost Free Double Door 2 Star Refrigerator  (Radiant Steel, NEO DF278 PRM RADIANT STEEL(2S)-TL))", product_image: "./image/2starfridge.webp", product_price: 25000 },
+  { id: 24, product_name: "fashion", product_details: "Men Regular Fit Solid Curved Collar Casual Shirt", product_image: "./image/men shirt.webp", product_price: 350 },
+  { id: 24, product_name: "fashion", product_details: "Men Slim Fit Solid Spread Collar Casual Shirt  (Pack of 2)", product_image: "./image/men slim.webp", product_price: 460 },
+  { id: 25, product_name: "fashion", product_details: "Men Loose Fit Mid Rise Light Blue Jeans", product_image: "./image/jeans.webp", product_price: 350 },
+  { id: 26, product_name: "fashion", product_details: "Men Solid Black Track Pants", product_image: "./image/track.webp", product_price: 390 },
+  { id: 27, product_name: "fashion", product_details: "Self Design Kanjivaram Silk Blend Saree  (Blue)", product_image: "./image/saree.webp", product_price: 2500 },
+];
+function search() {
+  data_base.filter((x)=>{
+      const inputValue = document.getElementById('searchvalue').value;
+      if(inputValue === x.product_name){
+        products(inputValue);
+      }
+  })
 }
- let users = JSON.parse(localStorage.getItem('users')) || [];
-  console.log(users);
+let users = JSON.parse(localStorage.getItem('users')) || [];
+console.log(users);
 
 //sig in
 function createLoginForm() {
@@ -76,105 +76,91 @@ function createLoginForm() {
   const password = document.getElementById('password');
   const cpassword = document.getElementById('cpassword');
 
-  // form.addEventListener('submit', (e) => {
-  //   if (!validateInputs(username,email,password,cpassword)) {
-  //     e.preventDefault();
-  //   }
-  // });
   form.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  if (validateInputs(username, email, password, cpassword)) {
-    users.push({
-      username: username.value.trim(),
-      email: email.value.trim(),
-      password: password.value.trim()
-    });
-    localStorage.setItem('users', JSON.stringify(users));
-    alert("Registration successful!");
-  }
-});
-
+    if (!validateInputs(username,email,password,cpassword)) {
+      e.preventDefault();
+    }
+  });
 }
-function validateInputs(username,email,password,cpassword) {
-   const usernameValue = username.value.trim();
-   const emailValue = email.value.trim();
-   const passwordValue = password.value.trim();
-   const cpasswordValue = cpassword.value.trim();
+function validateInputs(username, email, password, cpassword) {
+  const usernameValue = username.value.trim();
+  const emailValue = email.value.trim();
+  const passwordValue = password.value.trim();
+  const cpasswordValue = cpassword.value.trim();
   let success = true;
 
-  if (usernameValue==='') {
+  if (usernameValue === '') {
     success = false;
     setError(username, 'Username is required');
   } else {
     setSuccess(username);
   }
 
-     if(emailValue===''){
-        success = false;
-        setError(email,'Email is required')
-    }
-    else if(!validateEmail(emailValue)){
-        success = false;
-        setError(email,'Please enter a valid email')
-    }
-    else{
-        setSuccess(email)
-    }
+  if (emailValue === '') {
+    success = false;
+    setError(email, 'Email is required')
+  }
+  else if (!validateEmail(emailValue)) {
+    success = false;
+    setError(email, 'Please enter a valid email')
+  }
+  else {
+    setSuccess(email)
+  }
 
-    if (passwordValue === '') {
-        success = false;
-        setError(password, 'Password is required');
-    } else if (passwordValue.length < 8) {
-        success = false;
-        setError(password, 'Password must be at least 8 characters');
-    } else {
-        setSuccess(password);
-    }
+  if (passwordValue === '') {
+    success = false;
+    setError(password, 'Password is required');
+  } else if (passwordValue.length < 8) {
+    success = false;
+    setError(password, 'Password must be at least 8 characters');
+  } else {
+    setSuccess(password);
+  }
 
-    if (cpasswordValue === '') {
-        success = false;
-        setError(cpassword, 'Confirm password is required');
-    } else if (passwordValue !== cpasswordValue) {
-        success = false;
-        setError(cpassword, 'Passwords do not match');
-    } else {
-        setSuccess(cpassword);
-    }
+  if (cpasswordValue === '') {
+    success = false;
+    setError(cpassword, 'Confirm password is required');
+  } else if (passwordValue !== cpasswordValue) {
+    success = false;
+    setError(cpassword, 'Passwords do not match');
+  } else {
+    setSuccess(cpassword);
+  }
 
-      if (success) {
-        users.push({
-            username: usernameValue,
-            email: emailValue,
-            password: passwordValue
-        });
-        localStorage.setItem('users', JSON.stringify(users));
-    }
+  if (success) {
+    users.push({
+      username: usernameValue,
+      email: emailValue,
+      password: passwordValue
+    });
+    localStorage.setItem('users', JSON.stringify(users));
+  }
 
   return success;
 }
 
 function setError(element, message) {
-    const inputGroup = element.parentElement;
-    const errorElement = inputGroup.querySelector('.error');
-    errorElement.innerHTML = message;
-    inputGroup.classList.add('error');
-    inputGroup.classList.remove('success');
+  const inputGroup = element.parentElement;
+  const errorElement = inputGroup.querySelector('.error');
+  errorElement.innerHTML = message;
+  inputGroup.classList.add('error');
+  inputGroup.classList.remove('success');
 }
 
 function setSuccess(element) {
-    const inputGroup = element.parentElement;
-    const errorElement = inputGroup.querySelector('.error');
-    errorElement.innerHTML = '';
-    inputGroup.classList.add('success');
-    inputGroup.classList.remove('error');
+  const inputGroup = element.parentElement;
+  const errorElement = inputGroup.querySelector('.error');
+  errorElement.innerHTML = '';
+  inputGroup.classList.add('success');
+  inputGroup.classList.remove('error');
 }
 const validateEmail = (email) => {
-    return String(email)
-        .toLowerCase()
-        .match(
-            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        );
+  return String(email)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
 };
 
 // Load existing users from localStorage or start with empty array
@@ -218,6 +204,7 @@ function sign() {
       setError(usernameinput, 'Username is required');
     } else {
       setSuccess(usernameinput);
+
     }
 
     // Validate password
@@ -232,12 +219,13 @@ function sign() {
 
     const usernames = usernameinput.value.trim();
     const passwords = passwordinput.value.trim();
-        
-    let users = JSON.parse(localStorage.getItem('users')) || [];  
+
+    let users = JSON.parse(localStorage.getItem('users')) || [];
     const foundUser = users.find(u => u.username === usernames && u.password === passwords);
     
     if (foundUser) {
       alert(`Welcome, ${foundUser.username}! Login successful.`);
+
     } else {
       alert('Invalid username or password!');
     }
@@ -267,26 +255,25 @@ let result = document.getElementById('product_show');
 const rowcards = document.getElementById('row-cards')
 function products(value) {
   result.innerHTML = '';
-   rowcards.style.display = 'none';
-  // document.getElementById('scroll-con').style.display = 'none'
+  rowcards.style.display = 'none';
   // Create a row
   const row = document.createElement('div');
   row.className = 'row';
 
- data_base.map(item => {
-    if (item.product_name.toLowerCase().includes(value.toLowerCase())){
+  data_base.map(item => {
+    if (item.product_name.toLowerCase().includes(value.toLowerCase())) {
 
       // Create the column
       const col = document.createElement('div');
       col.className = 'col-md-4 mb-4 py-2';
-      
+
 
       // Create the card
       const card = document.createElement('div');
       card.className = 'card p-4 shadow-lg';
       card.style.width = '18em';
       card.style.margin = 'auto'; // Center the card
-      card.id='cards'
+      card.id = 'cards'
 
       // Create the image
       const image = document.createElement('img');
@@ -336,7 +323,7 @@ function products(value) {
 const footer = document.getElementById('footer')
 function buynowsection(item) {
   result.innerHTML = ''
-  footer.style.display='none'
+  footer.style.display = 'none'
   let deatils_buynow = `
      <div class="user_form card shadow-sm p-4 bg-white rounded mt-4 mb-4">
     <form>
@@ -390,15 +377,15 @@ function showCart() {
   if (cartItems.length === 0) {
     result.innerHTML = '<h3 class="text-center mt-5 text-muted">Your cart is empty.</h3>';
   } else {
-    displayCartItems(); 
+    displayCartItems();
   }
 }
 function cart(item) {
-  cartItems.push(item); 
-  alert("Item added to cart!"); 
+  cartItems.push(item);
+  alert("Item added to cart!");
 }
 function displayCartItems() {
-  result.innerHTML = ''; 
+  result.innerHTML = '';
 
   cartItems.forEach((item, index) => {
     result.innerHTML += `
@@ -430,7 +417,7 @@ function displayCartItems() {
 }
 
 function removeCartItem(index) {
-  cartItems.splice(index, 1); 
+  cartItems.splice(index, 1);
   if (cartItems.length === 0) {
     result.innerHTML = '<h3 class="text-center mt-5 text-muted">Your cart is empty.</h3>';
   } else {
@@ -445,31 +432,31 @@ function updateCartTotal(price, index) {
   document.getElementById(`totalAmount-${index}`).innerText = totalPrice;
 }
 ///rows of products 
-  const productContainers = {
-    mobile: document.getElementById('ShowElectronics'),
-    furniture: document.getElementById('ShowFurniture'),
-    fashion: document.getElementById('Show-fashion'),
+const productContainers = {
+  mobile: document.getElementById('ShowElectronics'),
+  furniture: document.getElementById('ShowFurniture'),
+  fashion: document.getElementById('Show-fashion'),
 
-  };
-  
-  data_base.forEach(item => {
-    const type = item.product_name.toLowerCase();
-    if (type === "mobile" || type === "furniture" || type === "fashion") {
-      const card = document.createElement('div');
-      card.className = "div inside";
-      const productDetails = item.product_details || item.product_name;
-      const slicedDetails = productDetails.length > 30 ? productDetails.slice(0, 30) + "..." : productDetails
-      card.innerHTML = `
+};
+
+data_base.forEach(item => {
+  const type = item.product_name.toLowerCase();
+  if (type === "mobile" || type === "furniture" || type === "fashion") {
+    const card = document.createElement('div');
+    card.className = "div inside";
+    const productDetails = item.product_details || item.product_name;
+    const slicedDetails = productDetails.length > 30 ? productDetails.slice(0, 30) + "..." : productDetails
+    card.innerHTML = `
         <img src="${item.product_image}" class="card-img-top" alt="${item.brand || item.product_name}">
         <div class="card-body">
           <p class="card-title">${slicedDetails}</p>
         <p class="card-text text-dark">From ₹${item.product_price || item.price}</p>
         </div>
       `;
-      productContainers[type].appendChild(card);
-    }
-  });
-  
+    productContainers[type].appendChild(card);
+  }
+});
+
 // Scroll button functionality
 document.querySelectorAll('.scroll-controls').forEach(control => {
   const leftBtn = control.querySelector('.scrollLeft');

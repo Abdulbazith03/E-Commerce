@@ -276,4 +276,7 @@ input:focus, textarea:focus, select:focus {
    .scroll-controls {
     display: none !important;
   }
+  .carousel-item img{
+    height: 200px;
+  }
 }
