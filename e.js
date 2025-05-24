@@ -14,13 +14,13 @@ let data_base = [
   { id: 13, product_name: "furniture", product_details: "FLYUP 5 Layer Collapsible Wardrobe for Clothes & Luggage Organiser", product_image: "./image/Zenvexiyo.webp", product_price: 708 },
   { id: 14, product_name: "furniture", product_details: "FLYUP 5 Layer Collapsible Wardrobe for Clothes & Luggage Organiser", product_image: "./image//Zenvexiyo.webp", product_price: 708 },
   { id: 15, product_name: "furniture", product_details: "FLYUP 5 Layer Collapsible Wardrobe for Clothes & Luggage Organiser", product_image: "./image/Zenvexiyo.webp", product_price: 708 },
-  { id: 16, product_name: "electrocis", product_details: "realme 108 cm (43 inch) Ultra HD (4K) LED Smart Android TV with Handsfree Voice Search and Dolby Visio...", product_image: "./Realmetv.webp", product_price: 24000 },
+  { id: 16, product_name: "electrocis", product_details: "realme 108 cm (43 inch) Ultra HD (4K) LED Smart Android TV with Handsfree Voice Search and Dolby Visio...", product_image: "./image/Realmetv.webp", product_price: 24000 },
   { id: 17, product_name: "electrocis", product_details: "Thomson Phoenix 2025 Edition 139 cm (55 inch) QLED Ultra HD (4K) Smart Google TV 2025 Edition", product_image: "./image/led tv.webp", product_price: 2000 },
-  { id: 18, product_name: "electrocis", product_details: "SAMSUNG 8 kg 5 star, Ecobubble, Digital Inverter, Fully Automatic Top Load Washing Machine Grey  (WA80BG4441BGTL)", product_image: "../e-commerce/image/categries_image/fulltu auto.webp", product_price: 19000 },
-  { id: 19, product_name: "electrocis", product_details: "LG 185 L Direct Cool Single Door 4 Star Refrigerator with Base Drawer with Smart Inverter Compressor & Smart Connect  (Scarlet Euphoria, GL-D199OSEY)", product_image: "../e-commerce/image/categries_image/led tv.webp", product_price: 25000 },
+  { id: 18, product_name: "electrocis", product_details: "SAMSUNG 8 kg 5 star, Ecobubble, Digital Inverter, Fully Automatic Top Load Washing Machine Grey  (WA80BG4441BGTL)", product_image: "./image/fulltu auto.webp", product_price: 19000 },
+  { id: 19, product_name: "electrocis", product_details: "LG 185 L Direct Cool Single Door 4 Star Refrigerator with Base Drawer with Smart Inverter Compressor & Smart Connect  (Scarlet Euphoria, GL-D199OSEY)", product_image: "./image/led tv.webp", product_price: 25000 },
   { id: 20, product_name: "home", product_details: "Voltas 2024 Model 1.5 Ton 3 Star Split Inverter AC - White  (183V CAX(4503692), Copper Condenser)", product_image: "./image/ac.webp", product_price: 24000 },
   { id: 21, product_name: "home", product_details: "MarQ by Flipkart 2025 1 Ton 5 Star Split Inverter 5-in-1 Convertible with Turbo Cool Technology AC - White  (105IPG25WQ, Copper Condenser)", product_image: "./image/walq ac.webp", product_price: 25000 },
-  { id: 22, product_name: "home", product_details: "LG 185 L Direct Cool Single Door 2 Star Refrigerator  (Dim Grey, GL-B199ODGC)", product_image: "../e-commerce/image/categries_image/lg fridge.webp", product_price: 15000 },
+  { id: 22, product_name: "home", product_details: "LG 185 L Direct Cool Single Door 2 Star Refrigerator  (Dim Grey, GL-B199ODGC)", product_image: "./image/lg fridge.webp", product_price: 15000 },
   { id: 23, product_name: "home", product_details: "Whirlpool 235 L Frost Free Double Door 2 Star Refrigerator  (Radiant Steel, NEO DF278 PRM RADIANT STEEL(2S)-TL))", product_image: "./image/2starfridge.webp", product_price: 25000 },
   { id: 24, product_name: "fashion", product_details: "Men Regular Fit Solid Curved Collar Casual Shirt", product_image: "./image/men shirt.webp", product_price: 350 },
   { id: 24, product_name: "fashion", product_details: "Men Slim Fit Solid Spread Collar Casual Shirt  (Pack of 2)", product_image: "./image/men slim.webp", product_price: 460 },
@@ -31,7 +31,7 @@ let data_base = [
 function search() {
   data_base.filter((x)=>{
       const inputValue = document.getElementById('searchvalue').value;
-      if(inputValue === x.product_name){
+      if(inputValue.toLowerCase()=== x.product_name.toLowerCase()){
         products(inputValue);
       }
   })
@@ -345,7 +345,7 @@ function buynowsection(item) {
         </div>
       </div>
 
-      <select class="form-select mb-3">
+      <select class="form-select mt-3 mb-3">
         <option selected disabled>Choose payment method</option>
         <option value="cod">Cash on Delivery</option>
         <option value="gpay">Google Pay</option>
@@ -399,7 +399,7 @@ function displayCartItems() {
             <p class="mb-1 fw-semibold">${item.product_details}</p>
             <p class="fw-bold mb-0">Total: ₹<span id="total-${index}">${item.product_price}</span></p>
             <div class="mt-5">
-              <button class="btn btn-primary" onclick="buynowsection()">Place Order</button>
+              <button class="btn btn-primary" onclick="buynow(${index})">Place Order</button>
               <button class="btn btn-danger" onclick="removeCartItem(${index})">Remove</button>
             </div>
           </div>
@@ -415,6 +415,11 @@ function displayCartItems() {
     `;
   });
 }
+function buynow(index) {
+  const item = cartItems[index];
+  buynowsection(item); 
+}
+
 
 function removeCartItem(index) {
   cartItems.splice(index, 1);
